@@ -1,0 +1,60 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+allprojects {
+    repositories {
+        jcenter()
+        maven {
+            url "https://maven.google.com"
+        }
+        maven {
+            url 'https://jitpack.io'
+        }
+    }
+}
+
+buildscript {
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.4.2'
+        classpath 'com.google.gms:google-services:4.2.0'
+        classpath 'com.google.android.gms:oss-licenses-plugin:0.9.5'
+    }
+    repositories {
+        google()
+        maven {
+            url 'https://maven.google.com/'
+        }
+        jcenter()
+    }
+}
+
+ext {
+    supportlib_version = '28.0.0'
+    gps_version = '[16.0.0, 17.0.0)'
+    fb_version = '[16.0.0, 18.0.0)'
+}
+
+//Ensure that all dependencies use the same version of the Android Support library
+subprojects {
+    project.configurations.all {
+        resolutionStrategy.eachDependency { details ->
+            if (details.requested.group == 'com.android.support'
+                    && !details.requested.name.contains('multidex')) {
+                details.useVersion "$supportlib_version"
+            }
+            if (details.requested.group == 'com.google.android.gms'
+                    && !details.requested.name.contains('multidex')) {
+                details.useVersion "$gps_version"
+            }
+            if (details.requested.group == 'com.google.firebase'
+                    && !details.requested.name.contains('multidex')) {
+                details.useVersion "$fb_version"
+            }
+        }
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
