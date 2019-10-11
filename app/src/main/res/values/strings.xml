@@ -127,7 +127,8 @@
     <string name="settings_rate_summary">Help other users enjoy this application</string>
     <string name="settings_rate">Rate this app</string>
 	
-    <string name="settings_copyright">Developed by CousinoApps</string>
+    <string name="settings_copyright">Developed by</string>
+    <string name="settings_copyright_summary">CousinoApps</string>
 
     <string name="settings_billing_summary">Manage your In-App purchases</string>
     <string name="settings_billing">In-App Products.</string>
