@@ -127,8 +127,8 @@
     <string name="settings_rate_summary">Help other users enjoy this application</string>
     <string name="settings_rate">Rate this app</string>
 	
-    <string name="settings_copyright">CousinoApps 2019 \nTodos Los Derechos Reservados</string>
-    <string name="settings_copyright_summary">\n\n\n</string>
+    <string name="settings_copyright">Todos los Derechos Reservados</string>
+    <string name="settings_copyright_summary">CousinoApps</string>
 
     <string name="settings_billing_summary">Manage your In-App purchases</string>
     <string name="settings_billing">In-App Products.</string>
