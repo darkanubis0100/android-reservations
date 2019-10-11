@@ -28,10 +28,6 @@
             android:summary="@string/settings_aboutus_summary"
             android:title="@string/settings_aboutus" />
         <Preference
-            android:key="copyright"
-            android:summary="@string/settings_copyright_summary"
-            android:title="@string/settings_copyright" />
-        <Preference
             android:key="licenses"
             android:summary="@string/settings_licenses_summary"
             android:title="@string/settings_licenses" />
@@ -39,6 +35,11 @@
             android:key="rate"
             android:summary="@string/settings_rate_summary"
             android:title="@string/settings_rate" />
+		<Preference
+            android:key="copyright"
+            android:summary="@string/settings_copyright_summary"
+			android:title="@string/settings_copyright" />
+        
 
     </PreferenceCategory>
 
