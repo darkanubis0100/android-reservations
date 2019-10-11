@@ -28,6 +28,10 @@
             android:summary="@string/settings_aboutus_summary"
             android:title="@string/settings_aboutus" />
         <Preference
+            android:key="copyright"
+            android:summary="@string/settings_copyright_summary"
+            android:title="@string/settings_copyright" />
+        <Preference
             android:key="licenses"
             android:summary="@string/settings_licenses_summary"
             android:title="@string/settings_licenses" />
